@@ -1,0 +1,32 @@
+
+@import "./utill/_modal_window";
+@import "./utill/_variables";
+@import "./utill/_mixins";
+@import "./utill/_container";
+
+//***>Components
+//Header
+@import "./components/header/_header";
+@import "./components/header/_logo";
+@import "./components/header/_navigation";
+@import "./components/header/_contacts";
+@import "./components/header/_mobile-menu";
+
+
+//Body
+//-->Index
+@import "./components/body/_body";
+@import "./components/body/_hero";
+@import "./components/body/_our-team";
+@import "./components/body/_partners";
+@import "./components/body/_services";
+@import "./components/body/_what-we-do";
+//-->Portfolio
+@import "./components/body/_portfolio-menu";
+@import "./components/body/_portfolio-projects";
+
+//Footer
+@import "./components/footer/_logo";
+@import "./components/footer/_address";
+@import "./components/footer/_social_networks";
+@import "./components/footer/_subscribe";
