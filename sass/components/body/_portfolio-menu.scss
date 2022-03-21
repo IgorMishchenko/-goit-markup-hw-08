@@ -7,29 +7,41 @@
 .portfolio-menu{
 
     &__list{
-         display: flex;
-        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        //margin-left: -30px;
     }
     
     &__item{
         @include default{
             width: calc(100% / 3 - 30px);
+            margin-bottom: 15px;
+            margin-top: 15px;
         }
 
         @include phone{
-            width: calc(100% / 3 - 30px);    
+            width: calc(100% / 3 - 30px);
+            margin-bottom: 15px;
+            margin-top: 15px;
+            margin-left: -15px; 
         }
 
         @include tablet{
-             
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            margin-top: 15px; 
             }
 
         @include desktop{
-            
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+             
             }
             
         &  + & {
-            margin-left: 8px;
+            margin-left: 15px;
         }
     }
 
@@ -37,6 +49,7 @@
 
     &__button {
         @include font(Roboto, normal, 500, 16px, 1.62, none, 0.03em);
+        //width: 140px;
         align-items: center;
         text-align: center;
         letter-spacing: 0.06em;
@@ -61,6 +74,7 @@
 
     &__button__active{
         @include font(Roboto, normal, 500, 16px, 1.62, none, 0.03em);
+        width: 100px;
         text-align: center;
         color: $main-white-color;
         background: $main-blue-color;

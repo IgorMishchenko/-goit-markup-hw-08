@@ -7,6 +7,10 @@
         margin-left: 0px;
     }
 
+    @include desktop{
+        margin-left: 0px;
+    }
+
     @include font(Raleway, normal, bold, 26px, 31px, none, 0.03em);
     list-style: none;
     color: $main-blue-color;
