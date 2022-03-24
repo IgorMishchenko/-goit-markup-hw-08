@@ -9,13 +9,8 @@
 }
 @include tablet{
     display: inline-block;
-    &__item + &__item{
-        //margin-left: 50px;
-        }
-    
-  
-    
 }
+    
 
 @include desktop{
     display: flex;

@@ -59,9 +59,10 @@
         }
     
     &__wrap{
+        z-index: -1;
         position: relative;
         overflow: hidden;
-         margin: 0 auto;
+        margin: 0 auto;
     }
 
     &__text-h3 {
@@ -97,12 +98,6 @@
 }
 
  
-
-
-
-
-
-
 
  
  
