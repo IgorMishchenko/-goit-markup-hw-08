@@ -32,6 +32,13 @@
         text-transform: uppercase;
         color: #212121;
         margin-top: 30px;
+        text-align: center;
+
+        @include default{text-align: center;}
+        @include   phone{text-align: center;}
+        @include  tablet{text-align: left;}
+        @include desktop{text-align: left;}
+
         }    
 
     
