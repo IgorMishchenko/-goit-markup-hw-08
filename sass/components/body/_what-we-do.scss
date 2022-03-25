@@ -18,7 +18,7 @@
     }
 
 
-    padding-bottom: 94px;
+
 
     &__item + &__item{
         margin-left: 27px;
@@ -53,6 +53,7 @@
 
     &__list {
          display: flex;
+         margin-bottom: 94PX;
         }
 
 }

@@ -27,6 +27,24 @@
     display: none;
     //display: block;
     margin-left: auto;
+
+    border: none;
+    background-color: transparent;
+ 
+    transition: color 300ms linear, fill 300ms linear, outline 300ms linear;
+    fill: #212121;
+
+    &:hover,
+    &:focus{
+    fill:  #2196F3;
+    }
+
+
+
+
+
+
+
 }
 
 .header-mobile-btn-close {

@@ -60,7 +60,7 @@
   line-height: 14px;
   letter-spacing: 0.01em;
   margin-top: 10px;
-  margin-left: 40px;
+  margin-left: 30px;
   color: #757575;
 }
 
@@ -71,11 +71,11 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  width: 348px;
+  width: 378px;
   height: 40px;
   padding-left: 30px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -102,10 +102,10 @@
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
-  width: 348px;
+  width: 378px;
   height: 120px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -324,7 +324,7 @@ ul, li {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 450px;
   }
 }
 
@@ -521,6 +521,10 @@ ul, li {
   height: 40px;
   display: none;
   margin-left: auto;
+  border: none;
+  background-color: transparent;
+  transition: color 300ms linear, fill 300ms linear, outline 300ms linear;
+  fill: #212121;
 }
 
 @media screen and (min-width: 320px) {
@@ -545,6 +549,10 @@ ul, li {
   .header-mobile-btn {
     display: none;
   }
+}
+
+.header-mobile-btn:hover, .header-mobile-btn:focus {
+  fill: #2196F3;
 }
 
 .header-mobile-btn-close {
@@ -705,8 +713,8 @@ ul, li {
 .hero {
   background-color: #2F303A;
   background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero_bg.jpg);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -920,33 +928,14 @@ ul, li {
 
 .our-team {
   background: #f5f4fa;
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 
 @media screen and (min-width: 320px) {
   .our-team {
-    padding-bottom: 30px;
-    padding-top: 30px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .our-team {
-    padding-bottom: 30px;
-    padding-top: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .our-team {
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .our-team {
-    padding-bottom: 60px;
-    padding-top: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -986,11 +975,11 @@ ul, li {
   letter-spacing: 0.03em;
   color: #212121;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  padding-top: 94px;
 }
 
 .our-team__conteiner {
+  padding-top: 94px;
   padding-top: 30px;
   padding-bottom: 30px;
   background: #ffffff;
@@ -1016,6 +1005,7 @@ ul, li {
   .our-team__list {
     display: flex;
     margin-left: -30px;
+    margin-top: 50px;
   }
 }
 
@@ -1121,8 +1111,8 @@ ul, li {
 }
 
 .partners {
-  margin-bottom: 60px;
-  margin-top: 60px;
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 320px) {
@@ -1359,10 +1349,6 @@ ul, li {
   margin-bottom: 30px;
 }
 
-.what-we-do {
-  padding-bottom: 94px;
-}
-
 @media screen and (min-width: 320px) {
   .what-we-do {
     display: none;
@@ -1433,6 +1419,7 @@ ul, li {
 
 .what-we-do__list {
   display: flex;
+  margin-bottom: 94PX;
 }
 
 @media screen and (min-width: 320px) {
@@ -1440,7 +1427,7 @@ ul, li {
     display: flex;
     flex-wrap: wrap;
     margin-top: 60px;
-    margin-bottom: 40px;
+    margin-left: -20px;
   }
 }
 
@@ -1449,7 +1436,7 @@ ul, li {
     display: flex;
     flex-wrap: wrap;
     margin-top: 60px;
-    margin-bottom: 40px;
+    margin-left: -20px;
   }
 }
 
@@ -1466,6 +1453,19 @@ ul, li {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .portfolio-menu__item {
+    width: calc(100% /2- 30px);
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  .portfolio-menu__item + .portfolio-menu__item {
+    margin-left: 15px;
   }
 }
 
@@ -1473,6 +1473,10 @@ ul, li {
   .portfolio-menu__item {
     width: calc(100% /3- 30px);
     margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  .portfolio-menu__item + .portfolio-menu__item {
+    margin-left: 8px;
   }
 }
 
@@ -1487,10 +1491,9 @@ ul, li {
     width: auto;
     margin-bottom: 20px;
   }
-}
-
-.portfolio-menu__item + .portfolio-menu__item {
-  margin-left: 15px;
+  .portfolio-menu__item + .portfolio-menu__item {
+    margin-left: 15px;
+  }
 }
 
 .portfolio-menu__button {
@@ -1506,7 +1509,6 @@ ul, li {
   letter-spacing: 0.06em;
   color: #212121;
   background: #F5F4FA;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   outline: none;
   border: 0;
@@ -1520,6 +1522,7 @@ ul, li {
 .portfolio-menu__button:hover, .portfolio-menu__button:focus {
   color: #ffffff;
   background: #347cdb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .portfolio-menu__button__active {
@@ -1534,7 +1537,6 @@ ul, li {
   text-align: center;
   color: #ffffff;
   background: #347cdb;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   padding: 6px 22px;
   outline: none;
@@ -1548,12 +1550,13 @@ ul, li {
 .portfolio-menu__button__active:hover, .portfolio-menu__button__active:focus {
   color: #212121;
   background: #F5F4FA;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-projects__list {
-  margin-top: 50px;
+  margin-top: 94px;
   margin-left: -30px;
-  margin-bottom: -30px;
+  margin-bottom: 94px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1675,7 +1678,8 @@ ul, li {
 
 @media screen and (min-width: 1200px) {
   .footer-logo {
-    margin-left: 0px;
+    margin-top: 60px;
+    margin-left: 40px;
   }
 }
 
@@ -1703,7 +1707,7 @@ ul, li {
 }
 
 .foter-address {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 @media screen and (min-width: 320px) {
@@ -1728,7 +1732,8 @@ ul, li {
 @media screen and (min-width: 1200px) {
   .foter-address {
     text-align: left;
-    margin-left: 0;
+    margin-left: 40px;
+    margin-bottom: 60px;
   }
 }
 
