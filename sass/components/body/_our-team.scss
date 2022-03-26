@@ -64,6 +64,7 @@
                 }
 
     @include phone{
+        padding-bottom: 60px;
     
                  }
                 
@@ -91,7 +92,7 @@
     @include default{
          
         margin-bottom: 15px;
-        margin-top: 15px;
+        margin-top: 30px;
     }
 
     @include tablet{
@@ -140,6 +141,7 @@
 .our-team-social-list{
     display: flex;
     justify-content: center;
+ 
     }
 
 .our-team-social__link{

@@ -1,19 +1,21 @@
 //Footer social-networks//
 .footer-social-networks {
     @include default{
-        margin-top: 40px;
-        padding-left:40px;
-        align-items:baseline;
+        text-align: center;
+
+        //align-items:center;
+        //justify-content: center;   
+        //align-items:baseline;
 
     }
     
     @include phone{
-        margin-top: 40px;
-        padding-left:137px;
-        align-items:baseline;
+        margin-top: 60px;
+        text-align: center;
     }
 
     @include tablet{
+        text-align: center;
         margin-top: -140px;
         padding-left:500px;
         margin-bottom: 80px;
@@ -21,8 +23,10 @@
     }
 
     @include desktop{
-        margin-top: -140px;
-        padding-left: 300px;
+        margin-top: -180px;
+        align-items:left;
+        margin-left: -860px;
+       // padding-left: 300px;
         align-items:baseline;
     }
 
@@ -32,10 +36,14 @@
         text-transform: uppercase;
         color: $main-white-color;
         padding-bottom: 20px;
-        padding-left: 30px;
+        //padding-left: 30px;
         }
 
     &__list{
+        align-items:center;
+        justify-content: center;
+        margin-bottom: 60px;
+
         @include font(Roboto, normal, bold, 14px, 16px, none, 0.03em);
         text-transform: uppercase;
         color: $main-white-color;

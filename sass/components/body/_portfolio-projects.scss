@@ -3,21 +3,22 @@
 .portfolio-projects{
  
     &__list{
-        margin-top: 94px;
-        margin-left: -30px;
-        margin-bottom: 94px;
+        //margin-top: 94px;
+        //margin-left: -30px;
+        margin-bottom: 64px;
 
             @include default{
 
             }
             
-            @include phone{
+            @include phone{ 
 
             }
 
             @include tablet{
                 display: flex;
                 flex-wrap: wrap;
+                margin-left: -35px;
             }
 
             @include desktop{
@@ -30,7 +31,7 @@
 
     &__item{
         
-        margin-left: 30px;
+        
         margin-bottom: 30px;
         border: 2px solid #eeeeee;
         box-sizing: border-box;
@@ -44,11 +45,13 @@
         }
 
         @include tablet{
+            margin-left: 30px;
             width: calc(100% / 2 - 30px);
         }
 
         @include desktop{
             width: calc(100% / 3 - 30px);
+            margin-left: 30px;
         }
 
             &:focus,

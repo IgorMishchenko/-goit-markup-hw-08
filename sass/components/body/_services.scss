@@ -51,8 +51,8 @@
     &__item{
         width: 100%;
         @include default{
-            margin-bottom: 15px;
-            margin-top: 15px;
+            //margin-bottom: 15px;
+            //margin-top: 15px;
         }
     
         @include tablet{

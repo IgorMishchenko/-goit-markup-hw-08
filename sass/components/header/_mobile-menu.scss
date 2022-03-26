@@ -68,22 +68,26 @@
   }
 
 .header-mobile{
+ 
+
+
     position: fixed;
-    background-color: #ffffff;
-    z-index:100;
     width: 100vw;
     height: 100vh;
     overflow: auto;
-    top:0;
+    top: 0;
     left: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    z-index: 2;
+  
+    padding: 48px 40px;
+    background-color: #ffffff;;
 
     &__conteiner{
+
         height: 100%;
         display: flex;
-        //display: none;
         flex-direction: column;
+        justify-content: space-between;
 
     }
 
@@ -126,7 +130,7 @@
 
 
 .header-mobile-contact{
-    margin-top: 210px; 
+    margin-top: 180px; 
     margin-left: 40px;
     
 

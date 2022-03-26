@@ -9,7 +9,7 @@
             flex-wrap: wrap;
             margin-top: 60px;
             //margin-bottom: 20px;
-            margin-left: -20px;
+            //margin-left: -20px;
             
         }
 
@@ -17,15 +17,17 @@
             display: flex;
             flex-wrap: wrap;
             margin-top: 60px;
-            //margin-bottom: 20px;
-            margin-left: -20px;
+            margin-bottom: 40px;
+            //margin-left: -20px;
             
         }
 
         @include tablet{
             display: flex;
             align-items: center;
-            justify-content: center
+            justify-content: center;
+            margin-bottom: 30px;
+            
             
         }
 
@@ -33,7 +35,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 94px;
+            //margin-top: 94px;
             margin-bottom: 50px;
             
         }
@@ -53,7 +55,7 @@
 
         @include phone{
             width: calc(100% /3- 30px);
-            margin-bottom: 20px; 
+            //margin-bottom: 20px; 
             margin-left: 10px;
             &  + & {
                 margin-left: 8px;
@@ -68,10 +70,10 @@
 
        
         @include desktop{
-            width: auto;
-            margin-bottom: 20px;
+            width: calc(100% /8- 30px);
+            //margin-bottom: 20px;
             &  + & {
-                margin-left: 15px;
+                margin-left: 8px;
              }
         }
             

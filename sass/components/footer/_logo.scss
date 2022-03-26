@@ -2,22 +2,27 @@
 
 .footer-logo{
     @include default{
-        margin-top: 10px;    
-        margin-left: 60px; 
+        //margin-top: 10px;    
+        //margin-left: 60px; 
         }
 
         @include phone{
-        margin-top: 60px;    
-        margin-left: 163px; 
+            text-align: center;
+
+        //align-items:center;
+        //justify-content: center;         
+        //margin-top: 60px;    
+        //margin-left: 163px; 
         }
 
         @include tablet{
-            margin-top: 30px;    
+            //margin-top: 30px;  
+            text-align: left;  
         margin-left: 50px; 
             }
 
         @include desktop{ 
-            margin-top: 60px; 
+        //margin-top: 60px; 
             margin-left: 40px;
             }
             
