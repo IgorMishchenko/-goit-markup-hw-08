@@ -1,5 +1,5 @@
 .partner__container{
-     
+     margin: 0 auto;
     @include default{width: 320px;}
     @include phone  {width: 480px;}
     @include tablet {width: 768px;}

@@ -1095,6 +1095,10 @@ ul, li {
   margin-left: 10px;
 }
 
+.partner__container {
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 320px) {
   .partner__container {
     width: 320px;
