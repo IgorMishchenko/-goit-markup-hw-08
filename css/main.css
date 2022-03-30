@@ -1095,10 +1095,6 @@ ul, li {
   margin-left: 10px;
 }
 
-.partner__container {
-  margin: 0 auto;
-}
-
 @media screen and (min-width: 320px) {
   .partner__container {
     width: 320px;
@@ -1125,43 +1121,33 @@ ul, li {
 
 @media screen and (min-width: 480px) {
   .partners {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .partners {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .partners {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
 .partners__list {
   display: flex;
   flex-wrap: wrap;
-}
-
-@media screen and (min-width: 480px) {
-  .partners__list {
-    margin-left: -15px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .partners__list {
-    margin-left: -15px;
-  }
+  margin: -15px;
 }
 
 .partners__item {
+  margin: 15px;
   height: 92px;
   display: flex;
   border-radius: 3%;
@@ -1169,19 +1155,20 @@ ul, li {
 
 @media screen and (min-width: 480px) {
   .partners__item {
-    margin-left: 30px;
-    margin-bottom: 30px;
+    width: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .partners__item {
+    width: calc(100% / 3 - 30px);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .partners__item {
-    margin-bottom: 30px;
+    width: calc(100% / 6 - 30px);
   }
-}
-
-.partners__item + .partners__item {
-  margin-left: 30px;
 }
 
 .partners__title {
@@ -1243,35 +1230,15 @@ ul, li {
 }
 
 .partners__link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 92px;
   border-radius: 3%;
   border: 1px solid #AFB1B8;
   fill: #AFB1B8;
   transition: color 300ms linear, bolder 300ms linear, fill 300ms linear;
-}
-
-@media screen and (min-width: 320px) {
-  .partners__link {
-    width: 210px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .partners__link {
-    width: 210px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .partners__link {
-    width: 226px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .partners__link {
-    width: 170px;
-  }
 }
 
 .partners__link:hover, .partners__link:focus {
